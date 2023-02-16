@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Fasano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href="https://www.instagram.com/fasano.dev/"  target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://github.com/Fasano18" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/fasanodev/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h1>Fasano</h1>
+                <h2>developer</h2>
+                <h3>front end developer</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>I am a front end developer</h1>
+                <p>Hello, my name is Leonardo Fasano I'm a junior front end developer and these are some of the technologies I master</p>
+                <div class="box-title">
+                    <p>90%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>80%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>CSS</span>
+
+                    <p>50%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>JavaScript</span>
+
+                    <p>30%</p>
+                    <div class="b1"><div class="b5"></div></div>
+                    <span>React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="port">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="image/TT UI.png" alt="">
+                    
+                </label>
+
+                <label class="card" for="item-2" id="song-2">
+                    <img src="image/calculadora.png" alt="">
+                </label>
+
+                <label class="card" for="item-3" id="song-3">
+                    <img src="https://github.com/Fasano18/Nlw-Setup/blob/main/.github/preview.jpg?raw=true" alt="">
+                    <a href="">
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                    <h1>Contact With me</h1>
+                    <div class="linha"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>leonardofasano18@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+55 18 998053020</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Teodoro Sampaio SP,Brazil</span>
+                </div>
+                <div class="contact-right">
+                    <h1>Fill the form</h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Name">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright 2022 <a href="">Fasano</a> All Rights Reserved</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
